@@ -12,6 +12,16 @@ h1,h2 {}
 h1 { font-size: 43px; color: #ffffff !important; font-family: 'Gotham' !important; }
 h2 { font-size: 30px; color: #ffffff !important; }
 
+body, html {
+  scrollbar-face-color: ThreeDFace !important;
+  scrollbar-shadow-color: ThreeDDarkShadow !important;
+  scrollbar-highlight-color: ThreeDHighlight !important;
+  scrollbar-3dlight-color: ThreeDLightShadow !important;
+  scrollbar-darkshadow-color: ThreeDDarkShadow !important;
+  scrollbar-track-color: Scrollbar !important;
+  scrollbar-arrow-color: ButtonText !important;
+}
+
 .header {
 	min-height: 90px;
 }
@@ -19,6 +29,7 @@ h2 { font-size: 30px; color: #ffffff !important; }
 .jumbotron {
 	background-color: #032b67;
 	background-image: url('images/splash-bg.jpg');
+	background-size: cover;
 	min-height: 600px;
 	color: #ffffff;
 	margin-bottom: 35px;
@@ -114,6 +125,21 @@ ul.book-review li a:hover { text-decoration: none; }
 .modal-other-category .options { padding-left: 20px; }
 .modal-other-category span.subtitle { font-size: 14px; font-weight: normal; }
 
+.modal-other-category .modal{
+    display: block !important; /* I added this to see the modal, you don't need this */
+}
+
+/* Important part */
+.modal-other-category .modal-dialog{
+    overflow-y: initial !important
+}
+.modal-other-category .modal-body {
+    height: 250px;
+    overflow-y: auto;
+}
+
+/*#clientModal .modal-title { margin: 0px; padding: 0px; }*/
+
 
 form input[type="text"] { 
 	font-size: 14px; color: #7d8389; font-weight: bold;
@@ -123,3 +149,41 @@ form input[type="text"] {
 	background: transparent; 
 	border: none; 
 	box-shadow: none !important; }
+
+
+
+/* facebook like scroll */
+
+#pageData
+{
+    height:300px; 
+    overflow:scroll; 
+    width:450px; 
+    border:1px blue dashed; 
+    margin:0 auto; 
+    margin-top:80px; 
+    margin-bottom:11px;
+    padding: 10px;
+}
+#box2000 > div
+{
+    -webkit-transition: width 0.2s ease; 
+    -moz-transition: width 0.2s ease; 
+    -o-transition: width 0.2s ease; 
+    -ms-transition: width 0.2s ease;     
+    transition: width 0.2s ease; 
+}
+#box2000 > div:hover
+{
+    width:120%!important;
+    cursor:pointer;
+}
+
+@media (min-width: 991px) {
+	#clientModal .modal-title {
+		margin: 10px;
+	    padding: 0px;
+	    padding-bottom: 10px;
+	    border-bottom: #000000 solid 1px;
+	    width: 95%; }
+}

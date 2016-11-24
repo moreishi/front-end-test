@@ -13,6 +13,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="assets/bootstrap/js/jquery-3.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
@@ -65,26 +66,7 @@
 				<div class="col-md-6 ">
 					<h3>Clients review LegalMatch lawyers</h3>
 					<div class="hp-reviews">
-						<div class="media hp-thumb">
-						  <div class="media-left">
-						    <a href="#">
-						      <img class="media-object" src="assets/images/review3.png" alt="...">
-						    </a>
-						    <p><strong>Mitchell M.</strong><br />Cherry Hill, NJ</p>
-						  </div>
-						  <div class="media-body">
-						    <h4 class="media-heading"><span>Family Law</span> 
-						    <img src="assets/images/star.png" />
-						    <img src="assets/images/star.png" />
-						    <img src="assets/images/star.png" />
-						    <img src="assets/images/star.png" /></h4>
-						    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-						    <ul class="book-review pull-right">
-						    	<li><a href="#">Read Review</a></li>
-						    	<li><a href="#"><img src="assets/images/book.png" /></a></li>
-						    </ul>
-						  </div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -167,6 +149,27 @@
 	      			<div class="col-md-6"><a href="#">Link</a></div>
 	      			<div class="col-md-6"><a href="#">Link</a></div>
 	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
 	      		</div>
 	      </div>
 	      <div class="modal-footer">
@@ -177,32 +180,36 @@
 	  </div>
 	</div>
 
-	<script>
-		
-		jQuery(document).ready(function($) {
-			$('.fld-category').on('click', function(e) {
-				$(this).find('.panel-category').slideToggle('slow');
-			});
 
-
-			// Modals
-			$('#myModal').on('shown.bs.modal', function () {
-			  // $('#myInput').focus()
-			})
-
-			// Modals
-			$('#otherCategories').on('shown.bs.modal', function () {
-			  // $('#myInput').focus()
-			})
-
-			$('.more-cat-a').on('click', function(e) {
-				e.preventDefault();
-				// alert('hi');
-			});
-
-		});
-
-	</script>
+	<!-- modal profile -->
+	<div class="modal fade modal-client" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/images/close-btn.jpg"></span></button>
+	        <h4 class="modal-title">CLIENT REVIEWS</h4>
+	      </div>
+	      <div class="modal-body">
+	      		<div class="media">
+				  <div class="media-left media-middle">
+				    <a href="#">
+				      <img class="media-object" src="assets/images/review1.png" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading">Name</h4>
+				    <span id="address">Address</span><br />
+				    <span id="category">Category</span>
+				  </div>
+				</div>
+	      </div>
+	      <div class="modal-footer">
+	        <!-- <button type="button" class="" data-dismiss="modal">FIND A LAWYER NOW</button> -->
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 </body>
 </html>

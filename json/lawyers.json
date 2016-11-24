@@ -1,1 +1,3 @@
-{name: 'sdfsd'}
+[{"name": "Brigida R.", "image": "review1.png", "address": "Dallas, TX","reviews": { "title": "Law Family", "review": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." }},
+{"name": "Michelle M.", "image": "review3.png", "address": "Cherry Hill, NJ","reviews": { "title": "Law Family", "review": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." }},
+{"name": "Joel C.", "image": "review2.png", "address": "Litle Rock, AK","reviews": { "title": "Job &amp; Employment", "review": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." }}]
