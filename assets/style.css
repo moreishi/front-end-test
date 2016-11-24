@@ -1,0 +1,24 @@
+h1,h2 {}
+
+h1 { font-size: 43px; color: #ffffff !important; }
+h2 { font-size: 30px; color: #ffffff !important; }
+
+.header {
+	min-height: 90px;
+}
+
+.jumbotron {
+	background-image: url('images/splash-bg.jpg');
+	min-height: 570px;
+	color: #ffffff;
+}
+
+.fld { min-height: 65px; }
+
+.fld-city { 
+	background-image: url('images/field-1.png');
+	background-repeat: no-repeat; }
+
+.fld-city input { width: 300px; }
+
+form input[type="text"] { background: transparent; border: none; }
