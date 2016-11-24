@@ -13,6 +13,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="assets/bootstrap/js/jquery-3.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
 
@@ -26,32 +27,182 @@
 	<div class="jumbotron">
 		<div class="container">
 			<div class="row">
-			<h1 class="twhite">Find a Lawyer for your Legal Issue</h1>
-			<h2>Fast, Free and Confidential</h2>
+				<h1 class="twhite">Find a Lawyer for your Legal Issue</h1>
+				<h2>Fast, Free and Confidential</h2>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 form">
 					<form>
 					  <div class="form-group">
 					    <label for="fld-city">Enter Zip Code or City:</label>
 					    <div class="fld fld-city">
-					    <input type="text" id="fld-city" class="form-control" placeholder=""></div>
+					    <input type="text" id="fld-city" class="form-control" placeholder="Does not have to be where you live"></div>
 					    
 					  </div>
-					  <div class="form-group fld fld-category">
+					  <div class="form-group">
 					    <label for="fld-category">Choose a category:</label>
-					    <div class="fld fld-category"><input type="text" id="fld-category" class="form-control" placeholder=""></div>
+					    <div class="fld fld-category">
+					    	<p>Click to choose a legal category</p>
+
+					    	<div class="panel panel-default panel-category" style="display: none;">
+							  <div class="panel-body">
+							    <ul>
+					    			<li data-toggle="modal" data-target="#myModal"><a href="#">Family</a></li>
+					    			<li data-toggle="modal" data-target="#myModal"><a  href="#">Criminal Defense</a></li>
+					    			<li data-toggle="modal" data-target="#myModal"><a  href="#">Business</a></li>
+					    			<li data-toggle="modal" data-target="#myModal"><a  href="#">Personal Injury</a></li>
+					    			<li data-toggle="modal" data-target="#myModal"><a  href="#">Employment</a></li>
+					    		</ul>
+							  </div>
+							</div>
+
+					    </div>
 					    
 					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
 					</form>
-					<p><a href="#">Can't find your category? Click here.</a></p>
+					<p class="more-cat">Can't find your category? <a data-toggle="modal" data-target="#otherCategories" class="more-cat-a" href="#">Click here</a>.</p>
 				</div>
-				<div class="col-md-6"></div>
+				<div class="col-md-6 ">
+					<h3>Clients review LegalMatch lawyers</h3>
+					<div class="hp-reviews">
+						<div class="media hp-thumb">
+						  <div class="media-left">
+						    <a href="#">
+						      <img class="media-object" src="assets/images/review3.png" alt="...">
+						    </a>
+						    <p><strong>Mitchell M.</strong><br />Cherry Hill, NJ</p>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading"><span>Family Law</span> 
+						    <img src="assets/images/star.png" />
+						    <img src="assets/images/star.png" />
+						    <img src="assets/images/star.png" />
+						    <img src="assets/images/star.png" /></h4>
+						    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+						    <ul class="book-review pull-right">
+						    	<li><a href="#">Read Review</a></li>
+						    	<li><a href="#"><img src="assets/images/book.png" /></a></li>
+						    </ul>
+						  </div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>	  
 	</div>
+ 
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-2"><img src="assets/images/highly-rated-right-v8.23_04.jpg"></div>
+			<div class="col-md-8">
+				<ul class="links">
+					<li><a href="#">User Agreement</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+				<p>Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch&copy;, <br />
+				the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending</p>
+			</div>
+			<div class="col-md-2">
+				<ul class="sponsor">
+					<li><img src="assets/images/etrust.jpg"></li>
+					<li><img src="assets/images/bbb.jpg"></li>
+				</ul>
+			</div>
+		</div>
+		<img src="assets/images/separator.jpg">
+	</div>
 
+
+
+	<!-- modal -->
+	<div class="modal fade modal-sub-category" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/images/close-btn.jpg"></span></button>
+	        <div class="title">
+	        <h4 class="modal-title" id="myModalLabel">
+	        <img src="assets/images/bullet-3.jpg" />
+	        Which <span><strong>Family Issue</strong></span> issue(s) apply to your case?</h4></div>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row options">
+	        	<div class="col-md-6">
+	        		<input type="checkbox" name="" /> Adoptions
+	        	</div>
+	        	<div class="col-md-6">
+	        		<input type="checkbox" name="" /> Child Support
+	        	</div>
+	        	<div class="col-md-6">
+	        		<input type="checkbox" name="" /> Guardianship
+	        	</div>
+	        	<div class="col-md-6">
+	        		<input type="checkbox" name="" /> Separations
+	        	</div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="" data-dismiss="modal">FIND A LAWYER NOW</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade modal-other-category" id="otherCategories" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/images/close-btn.jpg"></span></button>
+	        <div class="title">
+	        <h4 class="modal-title" id="myModalLabel">
+	        OTHER CATEGORIES <br> <span class="subtitle">Choose the category that best fits your case</span></div>
+	      </div>
+	      <div class="modal-body">
+	      		<div class="row options">
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      			<div class="col-md-6"><a href="#">Link</a></div>
+	      		</div>
+	      </div>
+	      <div class="modal-footer">
+	        <!-- <button type="button" class="" data-dismiss="modal">FIND A LAWYER NOW</button> -->
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+		
+		jQuery(document).ready(function($) {
+			$('.fld-category').on('click', function(e) {
+				$(this).find('.panel-category').slideToggle('slow');
+			});
+
+
+			// Modals
+			$('#myModal').on('shown.bs.modal', function () {
+			  // $('#myInput').focus()
+			})
+
+			// Modals
+			$('#otherCategories').on('shown.bs.modal', function () {
+			  // $('#myInput').focus()
+			})
+
+			$('.more-cat-a').on('click', function(e) {
+				e.preventDefault();
+				// alert('hi');
+			});
+
+		});
+
+	</script>
 
 </body>
 </html>

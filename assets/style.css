@@ -1,6 +1,15 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('font/Gotham/._Gotham-Bold.eot'); /* IE9 Compat Modes */
+	src: url('font/Gotham/._Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	 url('font/Gotham/._Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: 700;
+	font-style: normal;
+}
+
 h1,h2 {}
 
-h1 { font-size: 43px; color: #ffffff !important; }
+h1 { font-size: 43px; color: #ffffff !important; font-family: 'Gotham' !important; }
 h2 { font-size: 30px; color: #ffffff !important; }
 
 .header {
@@ -8,17 +17,109 @@ h2 { font-size: 30px; color: #ffffff !important; }
 }
 
 .jumbotron {
+	background-color: #032b67;
 	background-image: url('images/splash-bg.jpg');
-	min-height: 570px;
+	min-height: 600px;
 	color: #ffffff;
+	margin-bottom: 35px;
 }
+
+.jumbotron .form { padding: 0px; }
 
 .fld { min-height: 65px; }
 
 .fld-city { 
+	position: relative;
 	background-image: url('images/field-1.png');
 	background-repeat: no-repeat; }
 
-.fld-city input { width: 300px; }
+.fld-category { 
+	position: relative;
+	background-image: url('images/field-2.png');
+	background-repeat: no-repeat; }
 
-form input[type="text"] { background: transparent; border: none; box-shadow: none; }
+.fld-city input, .fld-category input { width: 400px;  }
+
+ul.sponsor {
+	list-style: none;
+}
+
+ul.sponsor > li { margin-bottom: 20px; }
+ul.links { padding: 0px; margin: 0px; margin-bottom: 45px; margin-top: 15px; }
+ul.links > li { display: inline-block; width: 125px; text-align: center; }
+
+.footer { margin-bottom: 50px; text-align: center; color: #919aa2; }
+.footer a { color: #919aa2; text-decoration: none; }
+
+.media .media-body h4.media-heading { font-size: 12px !important; position: relative; padding-top: 7px; }
+.media .media-body h4 span { margin-right: 20px;font-weight: bold; }
+.media .media-body p { font-size: 11px;  }
+.media .media-left p { font-size: 12px; }
+.media .media-left img { margin: auto; margin-bottom: 10px; }
+.media .media-left { font-size: 12px; width: 20%; text-align: center; } 
+
+.media.hp-thumb { padding-bottom: 10px; border-bottom: #497aa8 solid 1px; }
+
+.media-star { position: absolute; }
+.media-star > li { display: inline; list-style: none; }
+
+ul.book-review { list-style: none; margin-right: 20px; }
+ul.book-review li { display: inline-block; }
+ul.book-review li a { color: #bfb155; font-size: 10px; }
+ul.book-review li a:hover { text-decoration: none; }
+
+.more-cat { text-align: center; }
+.more-cat a { font-size: 18px; color: #ffffff; }
+.more-cat a:hover, .more-cat a:focus { text-decoration: none; }
+
+.fld-category:hover { cursor: pointer; }
+
+.fld-category .panel-category { position: absolute; top: 105%; border-radius: 15px; width: 88%; }
+.fld-category .panel-category ul { padding: 0px; }
+.fld-category .panel-category ul > li { padding-left: 30px; }
+.fld-category .panel-category ul > li > a { text-decoration: none; }
+.fld-category .panel-category ul > li:hover { background-color: #bdd2e0; }
+.fld-category .panel-category ul > li:hover a { color: #000000; font-weight: bold; }
+
+.modal .title { padding-left: 20px; margin-top: 30px }
+
+.modal-dialog { margin-top: 150px; }
+
+.modal-sub-category .options div { 
+	padding-left: 40px; 
+	padding-bottom: 20px; 
+	font-size: 14px !important; 
+	font-weight: bold; }
+.modal-sub-category .options div input { margin-right: 20px;  }
+
+.modal-header { border-bottom: none; }
+.modal-footer { border-top: none; text-align: center; }
+.modal-footer button { 
+	background: #02377b;
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50px; }
+
+.fld-category p { 
+	font-size: 14px; color: #7d8389; font-weight: bold;
+	position: absolute;
+	top: 23px;
+	left: 75px; }
+
+.modal h4.modal-title { color: #4e555c; }
+
+
+.modal-other-category .modal-title { font-weight: bold; }
+.modal-other-category .options { padding-left: 20px; }
+.modal-other-category span.subtitle { font-size: 14px; font-weight: normal; }
+
+
+form input[type="text"] { 
+	font-size: 14px; color: #7d8389; font-weight: bold;
+	position: absolute;
+	top: 17px;
+	left: 60px;
+	background: transparent; 
+	border: none; 
+	box-shadow: none !important; }
