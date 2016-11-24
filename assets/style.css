@@ -42,11 +42,13 @@ body, html {
 .fld-city { 
 	position: relative;
 	background-image: url('images/field-1.png');
+	background-size: contain;
 	background-repeat: no-repeat; }
 
 .fld-category { 
 	position: relative;
 	background-image: url('images/field-2.png');
+	background-size: contain;
 	background-repeat: no-repeat; }
 
 .fld-city input, .fld-category input { width: 400px;  }
@@ -186,4 +188,24 @@ form input[type="text"] {
 	    padding-bottom: 10px;
 	    border-bottom: #000000 solid 1px;
 	    width: 95%; }
+}
+
+@media screen and (max-width: 991px) {
+
+	.logo { width: 100%; max-width: 100%; height: auto; }
+
+	.top-misc img { 
+		/*width: 100%; max-width: 100%; height: auto;*/
+    	float: left!important;
+	    position: relative;
+	    margin-bottom: 30px;
+	    left: -70px;
+	}
+
+	.jumbotron { padding-left: 15px; padding-right: 15px; }
+
+}
+
+@media screen and (max-width: 450px) {
+	form input[type="text"] { top: 7%; }
 }
